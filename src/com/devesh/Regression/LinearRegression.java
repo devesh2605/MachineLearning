@@ -15,8 +15,10 @@ public class LinearRegression {
 
 		FindCoefficient coefficient = new FindCoefficient();
 
-		list1 = Utility.readTextFile("D:\\file1.txt");
-		list2 = Utility.readTextFile("D:\\file2.txt");
+		list1 = Utility.readTextFile(""); // Enter the path of the file which
+											// contains value of X
+		list2 = Utility.readTextFile(""); // Enter the path of the file which
+											// contains value of Y
 
 		slope = coefficient.findSlope(list1, list2);
 		intercept = coefficient.findIntercept(list1, list2);
